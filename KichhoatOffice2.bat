@@ -35,8 +35,6 @@ echo    [1] Go sach key Office cu
 echo    [2] Go key Office tuy chon
 echo    [3] Kich hoat ban quyen bang key online
 echo    [4] Nhap key va kich hoat Office (lay IID - CID)
-echo    [5] Sao luu ban quyen Windows - Office
-echo    [6] Khoi phuc ban quyen da Sao luu
 echo    [0] Thoat
 echo -------------------------------------------------------
 set /p choice=" Nhap lua chon cua ban: "
@@ -44,8 +42,6 @@ if "%choice%"=="1" Goto gokey
 if "%choice%"=="2" Goto gokey_2
 if "%choice%"=="3" Goto kich_key_copy
 if "%choice%"=="4" Goto nhap_key
-if "%choice%"=="5" Goto sao_luu
-if "%choice%"=="6" Goto khoi_phuc
 if %ERRORLEVEL%==0 goto thoat
 
 
@@ -318,5 +314,6 @@ goto kichhoat
 
 :thoat
 del /f /q "%~f0"
+
 exit
 ::-----------------------------------------------------------------------------------------------------------------------------------------------------------------
